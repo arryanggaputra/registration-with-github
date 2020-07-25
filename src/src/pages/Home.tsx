@@ -75,6 +75,7 @@ const Home: React.SFC<HomeProps> = (props) => {
 
   useEffect(() => {
     loadDefaultParticipants();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
