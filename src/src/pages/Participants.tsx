@@ -13,7 +13,7 @@ const ParticipantsPage: React.SFC<ParticipantsProps> = (props) => {
   const onChangeOrder = (e: React.FormEvent<HTMLInputElement>) => {
     let lists = [...listUser];
 
-    if (e.currentTarget.value == "1") {
+    if (parseInt(e.currentTarget.value) === 1) {
       lists.sort((a, b) => {
         // @ts-ignore
         return ("" + a.username).localeCompare(b.username);
